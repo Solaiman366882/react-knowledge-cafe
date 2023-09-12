@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "Exploring the Universe",
+      "author": {
+        "name": "Astronomy Enthusiast",
+        "author-img": "https://i.ibb.co/jMTmvc8/smiling-man-sitting-street-cafe-table-with-his-arms-crossed.jpg"
+      },
+      "coverImage": "https://i.ibb.co/LvMB8zp/nice-business-desk-black-background-1.jpg",
+      "postedDate": "2023-09-12",
+      "reading-time": 15,
+      "tags": ["space", "astronomy", "science"]
+    },
+    {
+      "id": 2,
+      "title": "Cooking with Fresh Ingredients",
+      "author": {
+        "name": "Chef Master",
+        "author-img": "https://i.ibb.co/jMTmvc8/smiling-man-sitting-street-cafe-table-with-his-arms-crossed.jpg"
+      },
+      "coverImage": "https://i.ibb.co/SrW0hT3/high-angle-desktop-with-laptop-copy-space.jpg",
+      "postedDate": "2023-09-11",
+      "reading-time": 20,
+      "tags": ["cooking", "recipes", "food"]
+    },
+    {
+      "id": 3,
+      "title": "Fitness for a Better You",
+      "author": {
+        "name": "Fitness Guru",
+        "author-img": "https://i.ibb.co/jMTmvc8/smiling-man-sitting-street-cafe-table-with-his-arms-crossed.jpg"
+      },
+      "coverImage": "https://i.ibb.co/SJnKV5j/top-view-workspace-with-laptop-notebook-1.jpg",
+      "postedDate": "2023-09-10",
+      "reading-time": 25,
+      "tags": ["fitness", "exercise", "health"]
+    },
+    {
+      "id": 4,
+      "title": "Exploring the Ocean Depths",
+      "author": {
+        "name": "Marine Biologist",
+        "author-img": "https://i.ibb.co/jMTmvc8/smiling-man-sitting-street-cafe-table-with-his-arms-crossed.jpg"
+      },
+      "coverImage": "https://i.ibb.co/LvMB8zp/nice-business-desk-black-background-1.jpg",
+      "postedDate": "2023-09-09",
+      "reading-time": 18,
+      "tags": ["ocean", "marine life", "biology"]
+    },
+    {
+      "id": 5,
+      "title": "Art of Photography",
+      "author": {
+        "name": "Photography Enthusiast",
+        "author-img": "https://i.ibb.co/jMTmvc8/smiling-man-sitting-street-cafe-table-with-his-arms-crossed.jpg"
+      },
+      "coverImage": "https://i.ibb.co/Wxtkh5z/top-view-desk-concept-with-coffee.jpg",
+      "postedDate": "2023-09-08",
+      "reading-time": 30,
+      "tags": ["photography", "art", "creativity"]
+    }
+  ]
+  
