@@ -1,13 +1,20 @@
 
 import './App.css'
 import Blogs from './components/Blogs/Blogs'
+import Bookmarks from './components/Bookmarks/Bookmarks'
+import Header from './components/Header/header'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-2xl text-cyan-500'>Vite + React</h1>
-      <Blogs></Blogs>
+      <div className='max-w-screen p-3'>
+        <Header></Header>
+        <div className='md:flex gap-4'>
+          <Blogs></Blogs>
+          <Bookmarks />
+        </div>
+      </div>
     </>
   )
 }

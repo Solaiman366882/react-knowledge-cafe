@@ -1,17 +1,18 @@
+import PropTypes from 'prop-types';
 
 export default function Blog({blog}){
-   const {title,author,coverImage} = blog;
+   const {title,author,coverImage,id} = blog;
     return(
-        <div className="blog">
+        <div className="blog" >
             <div className="blog-cover">
-                <img src="" alt="" />
+                <img src={`${coverImage}`} alt="" />
             </div>
             <div className="author-info">
                 <div className="info-left">
                     <div>
                         <img src="" alt="" />
                         <div>
-                            <h3></h3>
+                            <h3>{author.name}</h3>
                             <p></p>
                         </div>
                     </div>
@@ -27,4 +28,7 @@ export default function Blog({blog}){
         </div>
     )
 
+}
+Blogs.propTypes = {
+    blog: PropTypes.object.isRequired
 }
