@@ -12,9 +12,7 @@ function App() {
   const [readingTime,setReadingTime] = useState(0);
 
   const handleReadingTimeAdd = (blog) => {
-    console.log('reading time adding soon.');
-    console.log(blog);
-    const {reading_time} = blog
+    const {reading_time} = blog;
     const newReadingTime = readingTime + reading_time;
     setReadingTime(newReadingTime);
 

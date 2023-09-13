@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react"
 import Blog from "./blog";
 
@@ -23,5 +23,10 @@ export default function Blogs({handleAddToBookmarks,handleReadingTimeAdd}){
             }
         </div>
     )
+}
+
+Blogs.propTypes ={
+    handleAddToBookmarks: PropTypes.func,
+    handleReadingTimeAdd: PropTypes.func,
 }
 
