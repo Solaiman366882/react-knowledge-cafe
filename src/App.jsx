@@ -9,6 +9,17 @@ function App() {
 
   const [bookmarks,setBookmarks] = useState([]);
 
+  const [readingTime,setReadingTime] = useState(0);
+
+  const handleReadingTimeAdd = (blog) => {
+    console.log('reading time adding soon.');
+    console.log(blog);
+    const {reading_time} = blog
+    const newReadingTime = readingTime + reading_time;
+    setReadingTime(newReadingTime);
+
+  }
+
   const handleAddToBookmarks = (blog) => {
 
     const newBookmarks = [...bookmarks,blog];
@@ -20,8 +31,11 @@ function App() {
       <div className=' max-w-screen-xl mx-auto p-3'>
         <Header></Header>
         <div className='md:flex gap-4'>
-          <Blogs handleAddToBookmarks={handleAddToBookmarks} ></Blogs>
-          <Bookmarks bookmarks={bookmarks}/>
+          <Blogs 
+            handleAddToBookmarks={handleAddToBookmarks}
+            handleReadingTimeAdd={handleReadingTimeAdd} 
+          ></Blogs>
+          <Bookmarks bookmarks={bookmarks} readingTime={readingTime}/>
         </div>
       </div>
     </>

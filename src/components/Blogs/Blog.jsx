@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import {BsBookmarks} from 'react-icons/bs';
 
-export default function Blog({blog,handleAddToBookmarks}){
+export default function Blog({blog,handleAddToBookmarks,handleReadingTimeAdd}){
    const {title,author,coverImage,postedDate,reading_time,tags} = blog;
     return(
         <div className="blog p-4" >
@@ -28,10 +28,10 @@ export default function Blog({blog,handleAddToBookmarks}){
             </div>
             <div className="tags">
                 {
-                    tags.map((tag,idx) => <a className='text-lg text-sky-500 underline mr-3' key={idx}>#{tag}</a>)
+                    tags.map((tag,idx) => <a className='text-lg text-sky-500 mr-3' key={idx}>#{tag}</a>)
                 }
             </div>
-            <a href="">Mark as Read</a>
+            <p className='underline' onClick={() => handleReadingTimeAdd(blog)}>Mark as Read</p>
         </div>
     )
 
