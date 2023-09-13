@@ -19,7 +19,7 @@ export default function Blog({blog,handleAddToBookmarks}){
                     </div>
                     <div className='flex items-center gap-2'>
                         <p>{reading_time} min read</p>
-                        <button onClick={handleAddToBookmarks}><BsBookmarks /></button>
+                        <button onClick={() => handleAddToBookmarks(blog)}><BsBookmarks /></button>
                     </div>
                 </div>
             </div>
@@ -37,5 +37,6 @@ export default function Blog({blog,handleAddToBookmarks}){
 
 }
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleAddToBookmarks:PropTypes.func
 }

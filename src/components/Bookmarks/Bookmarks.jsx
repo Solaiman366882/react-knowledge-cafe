@@ -1,6 +1,7 @@
 import Spent from "../Spent/Spent";
+import Bookmark from "../Bookmarks/Bookmark"
 
-export default function Bookmarks(){
+export default function Bookmarks({bookmarks}){
 
     return(
         <div className="w-1/3 p-2">
@@ -8,10 +9,11 @@ export default function Bookmarks(){
                 <Spent />
             </div>
             <div className="mt-5 bg-[#6047ec2d] p-3 rounded-lg">
-                <h2>Bookmarked Blogs : 8</h2>
-                <div className="p-4 rounded-lg bg-[#fff] mt-3">
-                    <h2>Master Microsoft Power Platform and Become an In-Demand!</h2>
-                </div>
+                <h2>Bookmarked Blogs : {bookmarks.length}</h2>
+                {
+                    bookmarks.map((bookmark,idx) => <Bookmark bookmark={bookmark} key={idx}></Bookmark>)
+                }
+                
             </div>
         </div>
     )
