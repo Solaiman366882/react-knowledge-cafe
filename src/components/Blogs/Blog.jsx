@@ -38,5 +38,6 @@ export default function Blog({blog,handleAddToBookmarks,handleReadingTimeAdd}){
 }
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    handleAddToBookmarks:PropTypes.func
+    handleAddToBookmarks:PropTypes.func,
+    handleReadingTimeAdd:PropTypes.func
 }

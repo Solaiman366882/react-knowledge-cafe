@@ -1,4 +1,4 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import Spent from "../Spent/Spent";
 import Bookmark from "../Bookmarks/Bookmark"
 
@@ -19,6 +19,7 @@ export default function Bookmarks({bookmarks,readingTime}){
         </div>
     )
 }
-// Bookmarks.propTypes = {
-//     bookmarks : PropTypes.array,
-// }
+Bookmarks.propTypes = {
+    bookmarks : PropTypes.array,
+    readingTime:PropTypes.number
+}
